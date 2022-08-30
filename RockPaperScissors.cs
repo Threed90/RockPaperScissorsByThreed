@@ -1,61 +1,69 @@
-﻿const string Rock = "Rock";
-const string Paper = "Paper";
-const string Scissors = "Scissors";
+﻿using RockPaperScissors;
+using RockPaperScissors.Contracts;
+using RockPaperScissors.Models;
 
-Console.Write("Choose [r]ock, [p]aper or [s]cissors: ");
-string playerMove = Console.ReadLine();
+string[] movements = { "Rock", "Paper", "Scissors" };
 
-if (playerMove == "r" || playerMove == "rock")
-{
-    playerMove = Rock;
-}
-else if (playerMove == "p" || playerMove == "paper")
-{
-    playerMove = Paper;
-}
-else if (playerMove == "s" || playerMove == "scissors")
-{
-    playerMove = Scissors;
-}
-else
-{
-    Console.WriteLine("Invalid Input. Try Again...");
-    return;
-}
+ConsoleOutput console = new ConsoleOutput();
+IPlayer player = new PersonPlayer();
+IPlayer computer = new NPC();
 
-Random rdm = new Random();
-int computerRandomNumber = rdm.Next(1, 4);
-string computerMove = "";
-
-switch (computerRandomNumber)
+while (true)
 {
-    case 1:
-        computerMove = Rock;
-        break;
-    case 2:
-        computerMove = Paper;
-        break;
-    case 3:
-        computerMove= Scissors;
-        break;
-}
+    console.SetOptions(ConsoleColor.Gray, ConsoleColor.DarkBlue);
+    console.Print("Choose [r]ock, [p]aper or [s]cissors: ");
+    string playerMove = Console.ReadLine();
 
-Console.WriteLine($"The Computer chose {computerMove}.");
+    var isMoveSetted = player.SetMovement(playerMove);
 
-if(playerMove == computerMove)
-{
-    Console.WriteLine("The game was draw.");
-}
-else
-{
-    if(playerMove == Rock && computerMove == Scissors ||
-        playerMove == Scissors && computerMove == Paper ||
-        playerMove == Paper && computerMove == Rock)
+    if (!isMoveSetted)
     {
-        Console.WriteLine("You win.");
+        console.SetOptions(ConsoleColor.Red, ConsoleColor.Black);
+        console.Print("Invalid Input. Try Again...");
+        console.ResetOptions();
+        return;
+    }
+
+    Random rdm = new Random();
+    int computerRandomNumber = rdm.Next(0, 3);
+    string computerMove = movements[computerRandomNumber];
+
+    computer.SetMovement(computerMove.ToLower());
+
+
+    console.PrintLine($"The Computer chose {computer.Move.ToString()}.");
+
+    if (player.Move == computer.Move)
+    {
+        console.SetOptions(ConsoleColor.Cyan, ConsoleColor.DarkBlue);
+        console.PrintLine("The game was draw.");
     }
     else
     {
-        Console.WriteLine("You lose.");
+        if (player.Move == Movement.Rock && computer.Move == Movement.Scissors ||
+            player.Move == Movement.Scissors && computer.Move == Movement.Paper ||
+            player.Move == Movement.Paper && computer.Move == Movement.Rock)
+        {
+            console.SetOptions(ConsoleColor.Green, ConsoleColor.DarkBlue);
+            console.PrintLine("You win.");
+        }
+        else
+        {
+            console.SetOptions(ConsoleColor.Red, ConsoleColor.Black);
+            console.PrintLine("You lose.");
+        }
     }
+
+    console.ResetOptions();
+
+    console.SetOptions(ConsoleColor.Black, ConsoleColor.White);
+    console.Print("Press [n] to stop the game or any key to play again: ");
+
+    var key = Console.ReadKey();
+
+    if(key.KeyChar == 'n')
+    {
+        break;
+    }
+    console.PrintLine("");
 }
