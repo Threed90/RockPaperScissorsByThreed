@@ -19,9 +19,9 @@ while (true)
     if (!isMoveSetted)
     {
         console.SetOptions(ConsoleColor.Red, ConsoleColor.Black);
-        console.Print("Invalid Input. Try Again...");
+        console.PrintLine("Invalid Input. Try Again...");
         console.ResetOptions();
-        return;
+        continue;
     }
 
     Random rdm = new Random();
