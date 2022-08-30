@@ -6,7 +6,7 @@
 
 ---
 
-<img src="./RepoPics/GameICon.jpg" alt="game icon" width="500" height="600">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/GameIcon.png" alt="game icon" width="500" height="600">
 
 This is a simple console game <strong>"Rock-Paper-Scissor"</strong> where you and your oponent (the computer) choose one of three options: rock, paper or scissors. You can check the game rules below.
 
@@ -35,10 +35,10 @@ The rules are as follows:
 
 # Input and Output (Examples)
 
-<img src="./RepoPics/inputOne.jpg" alt="input img" width="500" height="600">
-<img src="./RepoPics/inputTwo.jpg" alt="input img" width="500" height="600">
-<img src="./RepoPics/inputThree.jpg" alt="input img" width="500" height="600">
-<img src="./RepoPics/inputFour.jpg" alt="input img" width="500" height="600">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputOne.png" alt="input img" width="500" height="600">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputTwo.png" alt="input img" width="500" height="600">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputThree.png" alt="input img" width="500" height="600">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputFour.png" alt="input img" width="500" height="600">
 
 # Demo
 
