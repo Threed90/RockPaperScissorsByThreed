@@ -35,10 +35,10 @@ The rules are as follows:
 
 # Input and Output (Examples)
 
-<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputOne.png" alt="input img" width="500" height="600">
-<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputTwo.png" alt="input img" width="500" height="600">
-<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputThree.png" alt="input img" width="500" height="600">
-<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputFour.png" alt="input img" width="500" height="600">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputOne.png" alt="input img" width="500" height="200">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputTwo.png" alt="input img" width="500" height="200">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputThree.png" alt="input img" width="500" height="200">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/inputFour.png" alt="input img" width="500" height="200">
 
 # Demo
 
