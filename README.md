@@ -52,19 +52,19 @@ It contains two interfaces IPlayer and IPrinter. Both interfeces are created wit
 
 It has one property Move from type Movement and one method SetMovement which has the idea to set value to Move property and also to return true if everything is successful.
 
-<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/IPlayerPic.png" alt="iplayer pickture" width="100" height="200">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/IPlayerPic.png" alt="iplayer pickture" width="130" height="200">
 
 ### IPrinter interface
 
 It is created to handle UI part of the project. It is generic interface and contains one property and four void methods.
 
-<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/IPrinterPic.png" alt="input img" width="100" height="200">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/IPrinterPic.png" alt="input img" width="130" height="200">
 
 ##  Models folder
 
 It contains all needed classes and one enumerator. The enumerator actually is describing the player movements. Classes present the both side of the players (computer and user) and also ConsoleOutput class which is actually a fasade class for System.Console.
 
-<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/ClassesPic.png" alt="class diagram" width="700" height="250">
+<img src="https://github.com/Threed90/RockPaperScissorsByThreed/blob/main/RepoPics/ClassesPic.png" alt="class diagram" width="700" height="330">
 
 # Demo
 
